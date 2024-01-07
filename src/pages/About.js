@@ -1,52 +1,67 @@
 import { Link, Outlet } from "react-router-dom";
-// import img from "../images/cat-banner.png";
+import teamImage1 from "../images/person1.jpg";
+import teamImage2 from "../images/person1.jpg";
+import teamImage3 from "../images/person1.jpg";
+import teamImage4 from "../images/person1.jpg";
+import aboutImg from "../images/aboutImg.png";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 const About = () => {
   return (
-    <>
-      <section className="categories-cont">
-        {/* <img src={img} className="login-banner" alt="mockup img" /> */}
-        <ul className="genres-list">
-          <Link to="/categories/texture" className="genres-title">
-            <li className="genres-item">
-            About
-              <p className="genres-para">
-                Oh, behold the wonders of randomness, where words frolic and
-                sentences dance in a chaotic symphony of pure, unadulterated
-                chance! Here we are, in the realm of unpredictability, where the
-                sentences are as random as a chicken playing the trombone in a
-                marching band of penguins!
-              </p>
-            </li>
-          </Link>
-          <Link to="/categories/chair" className="genres-title">
-            <li className="genres-item">
-              CHAIRS
-              <p className="genres-para">
-                Oh, behold the wonders of randomness, where words frolic and
-                sentences dance in a chaotic symphony of pure, unadulterated
-                chance! Here we are, in the realm of unpredictability, where the
-                sentences are as random as a chicken playing the trombone in a
-                marching band of penguins!
-              </p>
-            </li>
-          </Link>
-          <Link to="/categories/layout" className="genres-title">
-            <li className="genres-item">
-              LAYOUTS
-              <p className="genres-para">
-                Oh, behold the wonders of randomness, where words frolic and
-                sentences dance in a chaotic symphony of pure, unadulterated
-                chance! Here we are, in the realm of unpredictability, where the
-                sentences are as random as a chicken playing the trombone in a
-                marching band of penguins!
-              </p>
-            </li>
-          </Link>
-        </ul>
-      </section>
-      <Outlet />
-    </>
+    <Container className="about-cont">
+      {/* 'About Us' section with image and text */}
+      <Row className="align-items-center my-5">
+        <Col md={6} lg={5} className="mb-3 mb-md-0">
+          <img src={aboutImg} alt="About Us" className="img-fluid" style={{ maxWidth: '100%', height: 'auto' }} />
+        </Col>
+        <Col md={6} lg={7}>
+          <h1 className="about-title">ABOUT US</h1>
+          <p className="about-para">
+            A Time Saving product for Structural Engineers, that helps visualize large scale projects.A
+            Time Saving product for Structural Engineers, that helps visualize large scale projects.A 
+            Time Saving product for Structural Engineers, that helps visualize large scale projects.
+          </p>
+        </Col>
+      </Row>
+
+      {/* 'OUR MISSION' section */}
+      <Row className="text-center my-5">
+  <Col lg={8} className="offset-lg-2">
+    <h1>OUR MISSION</h1>
+    <p>
+      A Time Saving product for Structural Engineers, that helps visualize large scale projects.A
+      Time Saving product for Structural Engineers, that helps visualize large scale projects.A 
+      Time Saving product for Structural Engineers, that helps visualize large scale projects.
+    </p>
+  </Col>
+</Row>
+
+
+      {/* 'OUR TEAM' section with team images */}
+      <Row className="text-center my-5">
+        <Col xs={12}>
+          <h1>OUR TEAM</h1>
+        </Col>
+        <Col sm={6} md={3} className="mb-4">
+          <img src={teamImage1} alt="Team Member 1" className="img-fluid rounded-circle" style={{ width: '140px', height: '140px' }} />
+          <p className="team-name mt-2">Name Last</p>
+        </Col>
+        <Col sm={6} md={3} className="mb-4">
+          <img src={teamImage2} alt="Team Member 2" className="img-fluid rounded-circle" style={{ width: '140px', height: '140px' }} />
+          <p className="team-name mt-2">Name Last</p>
+        </Col>
+        <Col sm={6} md={3} className="mb-4">
+          <img src={teamImage3} alt="Team Member 3" className="img-fluid rounded-circle" style={{ width: '140px', height: '140px' }} />
+          <p className="team-name mt-2">Name Last</p>
+        </Col>
+        <Col sm={6} md={3} className="mb-4">
+          <img src={teamImage4} alt="Team Member 4" className="img-fluid rounded-circle" style={{ width: '140px', height: '140px' }} />
+          <p className="team-name mt-2">Name Last</p>
+        </Col>
+      </Row>
+    </Container>
   );
 };
 
