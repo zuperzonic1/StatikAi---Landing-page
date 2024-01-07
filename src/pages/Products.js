@@ -1,52 +1,63 @@
-import { Link, Outlet } from "react-router-dom";
-// import img from "../images/cat-banner.png";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Card from 'react-bootstrap/Card';
+import ListGroup from 'react-bootstrap/ListGroup';
+import onlinePng from '../images/onlinePkg.png';
+import offlinePng from '../images/offlinePkg.png';
+// import teamImage3 from "../images/person1.jpg";
 
 const Products = () => {
   return (
-    <>
-      <section className="categories-cont">
-        {/* <img src={img} className="login-banner" alt="mockup img" /> */}
-        <ul className="genres-list">
-          <Link to="/categories/texture" className="genres-title">
-            <li className="genres-item">
-            Products
-              <p className="genres-para">
-                Oh, behold the wonders of randomness, where words frolic and
-                sentences dance in a chaotic symphony of pure, unadulterated
-                chance! Here we are, in the realm of unpredictability, where the
-                sentences are as random as a chicken playing the trombone in a
-                marching band of penguins!
-              </p>
-            </li>
-          </Link>
-          <Link to="/categories/chair" className="genres-title">
-            <li className="genres-item">
-              CHAIRS
-              <p className="genres-para">
-                Oh, behold the wonders of randomness, where words frolic and
-                sentences dance in a chaotic symphony of pure, unadulterated
-                chance! Here we are, in the realm of unpredictability, where the
-                sentences are as random as a chicken playing the trombone in a
-                marching band of penguins!
-              </p>
-            </li>
-          </Link>
-          <Link to="/categories/layout" className="genres-title">
-            <li className="genres-item">
-              LAYOUTS
-              <p className="genres-para">
-                Oh, behold the wonders of randomness, where words frolic and
-                sentences dance in a chaotic symphony of pure, unadulterated
-                chance! Here we are, in the realm of unpredictability, where the
-                sentences are as random as a chicken playing the trombone in a
-                marching band of penguins!
-              </p>
-            </li>
-          </Link>
-        </ul>
-      </section>
-      <Outlet />
-    </>
+    <Container>
+      <Row className="justify-content-center text-center my-5">
+        <Col xs={12}>
+          <h2>PRODUCTS</h2>
+        </Col>
+      </Row>
+      
+      <Row className="justify-content-center my-5">
+        <Col md={6} lg={5} className="mb-4">
+          <Card className="h-100">
+            <Card.Body>
+              <Card.Title>OPTION 1</Card.Title>
+              <Card.Subtitle>ONLINE PACKAGE</Card.Subtitle>
+              <Card.Img variant="top" src={onlinePng} />
+              <ListGroup variant="flush">
+                {/* Add as many ListGroup.Item as you have features */}
+                <ListGroup.Item>Feature 1</ListGroup.Item>
+                <ListGroup.Item>Feature 2</ListGroup.Item>
+                <ListGroup.Item>Feature 3</ListGroup.Item>
+                {/* ... */}
+              </ListGroup>
+              <Card.Text className="mt-3">
+                $299.99 / YEAR
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+        
+        <Col md={6} lg={5} className="mb-4">
+          <Card className="h-100">
+            <Card.Body>
+              <Card.Title>OPTION 2</Card.Title>
+              <Card.Subtitle>OFFLINE PACKAGE</Card.Subtitle>
+              <Card.Img variant="top" src={offlinePng} />
+              <ListGroup variant="flush">
+                {/* Add as many ListGroup.Item as you have features */}
+                <ListGroup.Item>Feature 1</ListGroup.Item>
+                <ListGroup.Item>Feature 2</ListGroup.Item>
+                <ListGroup.Item>Feature 3</ListGroup.Item>
+                {/* ... */}
+              </ListGroup>
+              <Card.Text className="mt-3">
+                $2999 (ONE TIME)
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+      </Row>
+    </Container>
   );
 };
 

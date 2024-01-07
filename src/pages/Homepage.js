@@ -12,8 +12,8 @@ const Homepage = () => {
         <Col md={6} className="py-3"> {/* Added padding for better spacing */}
           <h1>YOUR CIVIL AI BUDDY !</h1>
           <p>A Time Saving product for Structural Engineers, that helps visualize large scale projects.</p>
-          <Button variant="primary">Button 1</Button>{' '}
-          <Button variant="secondary">Button 2</Button>
+          <Button variant="primary">GET STARTED</Button>{' '}
+          <Button variant="secondary">LEARN MORE</Button>
         </Col>
         <Col md={6} className="py-3">
           <SvgHome />

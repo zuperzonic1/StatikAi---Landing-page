@@ -27,7 +27,7 @@ const Layout = ({}) => {
       <footer className="footer">
         <Container>
           <p className="text-muted">
-            &copy; 2021 statikAi. All rights reserved.
+            &copy; 2024 statikAi. All rights reserved.
           </p>
         </Container>
       </footer>
