@@ -12,7 +12,7 @@ const Products = () => {
     <Container>
       <Row className="justify-content-center text-center my-5">
         <Col xs={12}>
-          <h1>PRODUCTS</h1>
+          <h1>PRODU<span className='yellow-span'>CTS</span></h1>
         </Col>
       </Row>
       

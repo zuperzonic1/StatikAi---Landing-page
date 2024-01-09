@@ -45,7 +45,7 @@ const About = () => {
 
 
 
-      <Row className="text-center my-10">
+      <Row className="text-center mb-5">
         <Col xs={12}>
           <h1>OUR <span className="yellow-span">TEAM</span></h1>
         </Col>

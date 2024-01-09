@@ -8,6 +8,7 @@ body {
   background: linear-gradient(-200deg, #000000, #1e1e1e, #000000);
   background-size: 300% 300%;
   animation: gradientAnimation 35s ease infinite;
+  height: 100%;
 }
 
 @keyframes gradientAnimation {
@@ -29,6 +30,10 @@ body::-webkit-scrollbar {
 body {
   -ms-overflow-style: none;
   scrollbar-width: none;
+  min-height: 100vh; /* Use viewport height to push the footer down */
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  justify-content: space-between; /* Push footer to the bottom */
 }
 
 
@@ -109,6 +114,7 @@ footer {
   /* background color */
   background-color: #0a0a0a;
   /* bottom of every page without sticking  */
+  height: 50px;
 }
 
 
@@ -130,5 +136,10 @@ a.btn.btn-secondary{
 a.btn.btn-secondary:hover{
   background-color: #999999;
   border-color: #b2b2b2;
+}
+
+img.img-fluid.rounded-circle{
+  margin-top: calc(4px + 1vmin);
+  border: 2px solid #D8AD16;
 }
 
