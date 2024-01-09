@@ -43,8 +43,9 @@ const About = () => {
         </Col>
       </Row>
 
-      {/* 'OUR TEAM' section with team images */}
-      <Row className="text-center my-5">
+
+
+      <Row className="text-center my-10">
         <Col xs={12}>
           <h1>OUR TEAM</h1>
         </Col>
@@ -54,6 +55,8 @@ const About = () => {
             alt="Team Member 1"
             className="img-fluid rounded-circle"
             style={{ width: "140px", height: "140px" }}
+            // remove inline style later and add to CSS file
+
           />
           <p className="team-name mt-2">Name Last</p>
         </Col>
@@ -63,6 +66,8 @@ const About = () => {
             alt="Team Member 2"
             className="img-fluid rounded-circle"
             style={{ width: "140px", height: "140px" }}
+            // remove inline style later and add to CSS file
+
           />
           <p className="team-name mt-2">Name Last</p>
         </Col>
@@ -72,6 +77,8 @@ const About = () => {
             alt="Team Member 3"
             className="img-fluid rounded-circle"
             style={{ width: "140px", height: "140px" }}
+            // remove inline style later and add to CSS file
+
           />
           <p className="team-name mt-2">Name Last</p>
         </Col>
@@ -81,8 +88,10 @@ const About = () => {
             alt="Team Member 4"
             className="img-fluid rounded-circle"
             style={{ width: "140px", height: "140px" }}
+            // remove inline style later and add to CSS file
           />
           <p className="team-name mt-2">Name Last</p>
+
         </Col>
       </Row>
     </Container>

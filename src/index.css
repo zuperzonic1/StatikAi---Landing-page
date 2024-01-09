@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: black;
+  background-color: rgb(24, 24, 24);
 }
 
 code {
@@ -13,7 +13,52 @@ code {
     monospace;
 }
 
-.test {
-/* background-color: red; */
+.yellow-span {
+  color: #D8AD16;
 }
+
+.custom-navbar {
+  background-color: #0a0a0a; /* Replace with your desired color */
+  padding: 10px 0; /* Adjust the padding to match your design */
+  /* add border bottom */
+  border-bottom: .5px solid #D8AD16;
+}
+
+/* Assuming .navbar-brand-custom is the class for your logo */
+.navbar-brand-custom, .navbar-brand-custom:visited, .navbar-brand-custom:hover, .navbar-brand-custom:focus, .navbar-brand-custom:active {
+  color: #ffffff; 
+  text-decoration: none; 
+}
+
+/* You may need to use !important to override Bootstrap's specificity in some cases */
+.navbar-brand-custom:visited {
+  color: #ffffff !important;
+}
+
+.navbar-brand-custom:hover {
+  color: #fff; 
+}
+
+.nav-link-custom {
+  color: #aaa; /* Replace with your desired color */
+  margin-right: 10px; /* Adjust spacing between nav items */
+}
+
+.nav-link-custom:hover {
+  color: #fff; /* Replace with your desired color */
+}
+
+
+
+.custom-toggler span.navbar-toggler-icon {
+  border-color: #aaa;
+background-color: #D8AD16;
+}
+
+/* If you want to change the background or border of the button */
+.custom-toggler {
+  border-color: #d8d8d8;
+}
+
+
 
