@@ -22,7 +22,7 @@ const About = () => {
           />
         </Col>
         <Col md={6} lg={7}>
-          <h1 className="about-title">ABOUT US</h1>
+          <h1 className="about-title">ABOUT <span className="yellow-span">US</span></h1>
           <p className="about-para">
             A Time Saving product for Structural Engineers, that helps visualize
             large scale projects.A Time Saving product for Structural Engineers,
@@ -33,7 +33,7 @@ const About = () => {
       </Row>
       <Row className="text-center my-5">
         <Col lg={8} className="offset-lg-2">
-          <h1>OUR MISSION</h1>
+          <h1>OUR <span className="yellow-span">MISSION</span></h1>
           <p>
             A Time Saving product for Structural Engineers, that helps visualize
             large scale projects.A Time Saving product for Structural Engineers,
@@ -47,7 +47,7 @@ const About = () => {
 
       <Row className="text-center my-10">
         <Col xs={12}>
-          <h1>OUR TEAM</h1>
+          <h1>OUR <span className="yellow-span">TEAM</span></h1>
         </Col>
         <Col sm={6} md={3} className="mb-4">
           <img

@@ -7,43 +7,53 @@ import SvgHome from "../components/SvgHome";
 
 const Homepage = () => {
   return (
-    <Container className="px-4"> {/* Add some padding on the sides */}
-      <Row className="align-items-center" style={{ minHeight: '80vh' }}> {/* Reduced the height a bit */}
-        <Col md={6} className="py-3"> {/* Added padding for better spacing */}
+    <Container className="px-4">
+       <Row className="align-items-center" style={{ minHeight: '80vh' }}>
+        <Col md={6} className="py-3 text-center text-md-start">
           <h1>YOUR <span className="yellow-span">AI</span> CIVIL BUDDY !</h1>
           <p>A Time Saving product for Structural Engineers, that helps visualize large scale projects.</p>
-          <Button variant="primary">GET STARTED</Button>
-          <Button variant="secondary">LEARN MORE</Button>
+          
+          {/* Buttons next to each other for md screens and up */}
+          <Row className="justify-content-center justify-content-md-start">
+          <Col xs="auto">
+            <Button as={Link} to="/products" variant="primary" className="me-2">GET STARTED</Button>
+          </Col>
+          <Col xs="auto">
+            <Button as={Link} to="/about" variant="secondary">LEARN MORE</Button>
+          </Col>
+        </Row>
+
         </Col>
         <Col md={6} className="py-3">
           <SvgHome />
         </Col>
       </Row>
       
-      <Row className="my-5 justify-content-center text-center">
+      {/* This Row will center the text for xs and reset to text-start for md and larger */}
+      <Row className="my-5 text-center ">
         <Col xs={12}>
-          <h1>WHY USE OUR PRODUCTS</h1>
+          <h1>WHY USE OUR <span className="yellow-span">PRODUCTS</span></h1>
         </Col>
-        {/* The following 'Col' components are laid out two per row on desktop screens */}
-        <Col md={6}>
+        {/* Reset text alignment for md and larger */}
+        <Col xs={12} md={6} className="text-center ">
           <div>
             <div>1</div>
             <div>WE ARE BETTER BECAUSE...</div>
           </div>
         </Col>
-        <Col md={6}>
+        <Col xs={12} md={6} className="text-center ">
           <div>
             <div>2</div>
             <div>WE ARE BETTER BECAUSE...</div>
           </div>
         </Col>
-        <Col md={6}>
+        <Col xs={12} md={6} className="text-center ">
           <div>
             <div>3</div>
             <div>WE ARE BETTER BECAUSE...</div>
           </div>
         </Col>
-        <Col md={6}>
+        <Col xs={12} md={6} className="text-center ">
           <div>
             <div>4</div>
             <div>WE ARE BETTER BECAUSE...</div>
