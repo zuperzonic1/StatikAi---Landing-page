@@ -25,7 +25,7 @@ const Layout = () => {
       <footer className="custom-footer">
         <Container>
           <p className="text-muted">
-            &copy;2024 statikAi. All rights reserved.
+            &copy;2024 statikAi All rights reserved.
           </p>
         </Container>
       </footer>

@@ -8,6 +8,26 @@ body {
   background-color: rgb(24, 24, 24);
 }
 
+/* hides scroll bar, but keeps scrolling on main browsers. */
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
+h1{
+  color: #d2d2d2;
+}
+
+p{
+  color: #9e9e9e;
+  /* dynamic font size */
+  font-size: calc(4px + 2vmin);
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

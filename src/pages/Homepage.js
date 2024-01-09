@@ -10,9 +10,9 @@ const Homepage = () => {
     <Container className="px-4"> {/* Add some padding on the sides */}
       <Row className="align-items-center" style={{ minHeight: '80vh' }}> {/* Reduced the height a bit */}
         <Col md={6} className="py-3"> {/* Added padding for better spacing */}
-          <h1>YOUR CIVIL AI BUDDY !</h1>
+          <h1>YOUR <span className="yellow-span">AI</span> CIVIL BUDDY !</h1>
           <p>A Time Saving product for Structural Engineers, that helps visualize large scale projects.</p>
-          <Button variant="primary">GET STARTED</Button>{' '}
+          <Button variant="primary">GET STARTED</Button>
           <Button variant="secondary">LEARN MORE</Button>
         </Col>
         <Col md={6} className="py-3">
