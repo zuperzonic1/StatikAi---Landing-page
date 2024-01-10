@@ -22,7 +22,9 @@ const About = () => {
           />
         </Col>
         <Col md={6} lg={7}>
-          <h1 className="about-title">ABOUT <span className="yellow-span">US</span></h1>
+          <h1 className="about-title">
+            ABOUT <span className="yellow-span">US</span>
+          </h1>
           <p className="about-para">
             A Time Saving product for Structural Engineers, that helps visualize
             large scale projects.A Time Saving product for Structural Engineers,
@@ -33,7 +35,9 @@ const About = () => {
       </Row>
       <Row className="text-center my-5">
         <Col lg={8} className="offset-lg-2">
-          <h1>OUR <span className="yellow-span">MISSION</span></h1>
+          <h1>
+            OUR <span className="yellow-span">MISSION</span>
+          </h1>
           <p>
             A Time Saving product for Structural Engineers, that helps visualize
             large scale projects.A Time Saving product for Structural Engineers,
@@ -43,11 +47,11 @@ const About = () => {
         </Col>
       </Row>
 
-
-
       <Row className="text-center mb-5">
         <Col xs={12}>
-          <h1>OUR <span className="yellow-span">TEAM</span></h1>
+          <h1>
+            OUR <span className="yellow-span">TEAM</span>
+          </h1>
         </Col>
         <Col sm={6} md={3} className="mb-4">
           <img
@@ -56,7 +60,6 @@ const About = () => {
             className="img-fluid rounded-circle"
             style={{ width: "140px", height: "140px" }}
             // remove inline style later and add to CSS file
-
           />
           <p className="team-name mt-2">Name Last</p>
         </Col>
@@ -67,7 +70,6 @@ const About = () => {
             className="img-fluid rounded-circle"
             style={{ width: "140px", height: "140px" }}
             // remove inline style later and add to CSS file
-
           />
           <p className="team-name mt-2">Name Last</p>
         </Col>
@@ -78,7 +80,6 @@ const About = () => {
             className="img-fluid rounded-circle"
             style={{ width: "140px", height: "140px" }}
             // remove inline style later and add to CSS file
-
           />
           <p className="team-name mt-2">Name Last</p>
         </Col>
@@ -91,7 +92,6 @@ const About = () => {
             // remove inline style later and add to CSS file
           />
           <p className="team-name mt-2">Name Last</p>
-
         </Col>
       </Row>
     </Container>
