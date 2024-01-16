@@ -1,34 +1,42 @@
-// FeatureSection.js
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import React from "react";
+import { Row, Col, Card } from "react-bootstrap";
+import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
 
 const FeatureSection = () => {
   const features = [
-    { id: 1, text: "WE ARE BETTER BECAUSE..." },
-    { id: 2, text: "WE ARE BETTER BECAUSE..." },
-    { id: 3, text: "WE ARE BETTER BECAUSE..." },
-    { id: 4, text: "WE ARE BETTER BECAUSE..." },
+    { id: 1, title: "OFFLINE & ONLINE PRODUCTS" },
+    { id: 2, title: "PLATFORM AGNOSTIC" },
+    { id: 3, title: "NORTHERN ALBERTA READY" },
+    { id: 4, title: "HANDLES COMPLEX EQUATIONS & DIAGRAMS" },
     // Add more features as needed
   ];
 
   return (
-    <>
-      <Row className="my-5 text-center ">
-        <Col xs={12}>
-          <h1>
-            WHY USE OUR <span className="yellow-span">PRODUCTS</span>
-          </h1>
+    <Row className="my-5 text-center">
+      <Col xs={12}>
+        <h1 className="mb-4 text-light">
+          WHY USE OUR <span className="text-warning">PRODUCTS</span>
+        </h1>
+      </Col>
+      {features.map((feature) => (
+        <Col xs={12} md={6} lg={3} key={feature.id} className="mb-4">
+          <Card
+            className="h-100"
+            bg="transparent"
+            text="light"
+            border="warning"
+          >
+            <Card.Body>
+              <Card.Title>{feature.title}</Card.Title>
+            </Card.Body>
+          </Card>
         </Col>
-        {features.map((feature) => (
-          <Col xs={12} md={6} key={feature.id} className="text-center ">
-            <div>
-              <div>{feature.id}</div>
-              <div>{feature.text}</div>
-            </div>
-          </Col>
-        ))}
-      </Row>
-    </>
+      ))}
+      <Button as={Link} to="/products" variant="primary" className="me-2">
+        GET STARTED
+      </Button>
+    </Row>
   );
 };
 

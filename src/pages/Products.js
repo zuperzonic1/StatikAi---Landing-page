@@ -2,6 +2,8 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
 import ListGroup from "react-bootstrap/ListGroup";
 import onlinePng from "../images/onlinePkg.png";
 import offlinePng from "../images/offlinePkg.png";
@@ -15,7 +17,8 @@ const Products = () => {
             PRODU<span className="yellow-span">CTS</span>
           </h1>
           <p className="mt-3">
-            Our products are coming soon! Stay tuned for the release.
+            Contact us to access the trials for the products and add value to
+            your projects
           </p>
         </Col>
       </Row>
@@ -24,21 +27,34 @@ const Products = () => {
         <Col md={6} lg={5} className="mb-4">
           <Card className="h-100 product-card">
             <Card.Body>
+              <Card.Title>
+                CODEWISE <span className="yellow-span">INTELLIGENCE</span>
+              </Card.Title>
               <Card.Subtitle>
-                OPTION <span className="yellow-span">ONE</span>
+                Unlock the Power of Language Models and Multimodal Technology!
               </Card.Subtitle>
-              <Card.Title>ONLINE PACKAGE (SOON)</Card.Title>
               <Card.Img
                 className="mt-3 border-custom rounded-5"
                 variant="top"
                 src={onlinePng}
               />
               <ListGroup variant="flush">
-                <ListGroup.Item>Feature 1</ListGroup.Item>
-                <ListGroup.Item>Feature 2</ListGroup.Item>
-                <ListGroup.Item>Feature 3</ListGroup.Item>
+                <ListGroup.Item>
+                  Engineering codes context-Aware Intelligence
+                </ListGroup.Item>
+                <ListGroup.Item>Common Engineering Calculations</ListGroup.Item>
+                <ListGroup.Item>
+                  Effortless Integration into your systems
+                </ListGroup.Item>
               </ListGroup>
-              <Card.Text className="mt-3">$299.99 / YEAR</Card.Text>
+              <Button
+                as={Link}
+                to="/contact"
+                variant="secondary"
+                className="me-2"
+              >
+                Contact Us
+              </Button>
             </Card.Body>
           </Card>
         </Col>
@@ -46,21 +62,32 @@ const Products = () => {
         <Col md={6} lg={5} className="mb-4">
           <Card className="h-100 product-card">
             <Card.Body>
+              <Card.Title>
+                STRUCTURAL <span className="yellow-span">GENESIS</span>
+              </Card.Title>
               <Card.Subtitle>
-                OPTION <span className="yellow-span">TWO</span>
+                Transform Text into Structural Engineering Marvels!
               </Card.Subtitle>
-              <Card.Title>OFFLINE PACKAGE(SOON)</Card.Title>
               <Card.Img
                 className="mt-3 border-custom rounded-5"
                 variant="top"
                 src={offlinePng}
               />
               <ListGroup variant="flush">
-                <ListGroup.Item>Feature 1</ListGroup.Item>
-                <ListGroup.Item>Feature 2</ListGroup.Item>
-                <ListGroup.Item>Feature 3</ListGroup.Item>
+                <ListGroup.Item>
+                  Intuitive Text-to-Design Interface
+                </ListGroup.Item>
+                <ListGroup.Item>Optimized Engineering Solutions</ListGroup.Item>
+                <ListGroup.Item>Unleash Creativity</ListGroup.Item>
               </ListGroup>
-              <Card.Text className="mt-3">$2999 (ONE TIME)</Card.Text>
+              <Button
+                as={Link}
+                to="/contact"
+                variant="secondary"
+                className="me-2"
+              >
+                Contact Us
+              </Button>
             </Card.Body>
           </Card>
         </Col>

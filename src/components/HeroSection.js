@@ -18,10 +18,7 @@ const HeroSection = () => {
             loop
           />
         </h1>
-        <p>
-          A Time Saving product for Structural Engineers, that helps visualize
-          large scale projects.
-        </p>
+        <p>Unlock the power of AI to transform your engineering projects</p>
         <Row className="justify-content-center justify-content-md-start">
           <Col xs="auto">
             <Button as={Link} to="/products" variant="primary" className="me-2">

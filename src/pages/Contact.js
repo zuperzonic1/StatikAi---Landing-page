@@ -59,7 +59,9 @@ const Contact = () => {
     <Container className="my-5">
       <Row className="justify-content-center">
         <Col md={8} lg={6}>
-          <h1>Contact Us</h1>
+          <h1>
+            Contact <span className="yellow-span">Us</span>
+          </h1>
           <p className="mb-4">
             Fill out the form and our team will get back to you shortly.
           </p>
