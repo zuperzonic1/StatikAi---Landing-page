@@ -21,14 +21,12 @@ const FeatureSection = () => {
       </Col>
       {features.map((feature) => (
         <Col xs={12} md={6} lg={3} key={feature.id} className="mb-4">
-          <Card
-            className="h-100"
-            bg="transparent"
-            text="light"
-            border="warning"
-          >
-            <Card.Body>
-              <Card.Title>{feature.title}</Card.Title>
+          <Card className="h-100 bg-transparent text-light border-warning">
+            <Card.Body
+              className="d-flex justify-content-center align-items-center"
+              style={{ height: "100%" }}
+            >
+              <Card.Title className="m-0">{feature.title}</Card.Title>
             </Card.Body>
           </Card>
         </Col>
