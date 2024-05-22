@@ -1,2 +1,2 @@
-# Getting Started with Create React App
-A simple landing page for a company called StatikAI
+# StatikAI - Landing page
+A simple landing page for a company called StatikAI using React and bootstrap
